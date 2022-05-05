@@ -31,7 +31,7 @@ function error {
 }
 
 # Base raw github URL
-_raw_base="https://raw.githubusercontent.com/ej52/proxmox-scripts/main/lxc/nginx-proxy-manager"
+_raw_base="https://raw.githubusercontent.com/lukirch1984/proxmox-scripts/main/lxc/nginx-proxy-manager"
 # Operating system
 _os_type=alpine
 _os_version=3.12
@@ -121,10 +121,10 @@ warn "bridge:   $_bridge"
 warn "storage:  $_storage"
 warn "templates:  $_storage_template"
 warn ""
-warn "If you want to abort, hit ctrl+c within 10 seconds..."
+warn "If you want to abort, hit ctrl+c within 4 seconds..."
 echo ""
 
-sleep 10
+sleep 4
 
 # Download latest Alpine LXC template
 info "Updating LXC template list..."
