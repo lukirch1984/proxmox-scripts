@@ -95,6 +95,8 @@ runcmd 'apk add python3 openresty nodejs yarn openssl apache2-utils logrotate $D
 log "Setting up python"
 python3 -m venv /opt/certbot/
 runcmd python3 -m ensurepip --upgrade
+# Update PIP
+runcmd pip3 install --upgrade pip
 # Install certbot and python dependancies
 runcmd pip3 install --no-cache-dir -U cryptography==3.3.2
 runcmd pip3 install --no-cache-dir cffi certbot
