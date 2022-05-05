@@ -7,6 +7,7 @@ Many benefits can be gained by using a LXC container compared to a VM. The resou
 To create a new LXC container on Proxmox and setup Nginx Proxy Manager to run inside of it, run the following in a SSH connection or the Proxmox web shell.
 
 ***Note:*** _tested with proxmox 7.1-10
+
 ***Note:*** _This will create alpine container_
 
 ```bash
